@@ -44,8 +44,8 @@ class SimpleMap {
 	function parse( $input, $argv ) {
 		global $wgScriptPath, $wgStaticMapLiteServiceUrl;
 
-		wfLoadExtensionMessages( 'SimpleMap' );
-		
+		//Disable in MW 1.21
+		//wfLoadExtensionMessages( 'SimpleMap' );
 		
 		//Receive args of the form <map aaa=bbb ccc=ddd />
 		if ( isset( $argv['lat'] ) ) { 
