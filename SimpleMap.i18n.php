@@ -172,7 +172,7 @@ $messages['bg'] = array(
  * @author Mormegil
  */
 $messages['cs'] = array(
-	'simplemap_desc' => 'Umožňuje použití tagu <code><nowiki>&lt;map&gt;</nowiki></code> pro zobrazení posuvné mapy static. Mapy pocházejí z [http://openstreetmap.org openstreetmap.org].',
+	'simplemap_desc' => 'Umožňuje použití tagu <code><nowiki>&lt;map&gt;</nowiki></code> pro zobrazení statického obrázku mapy. Mapy pocházejí z [http://openstreetmap.org openstreetmap.org].',
 	'simplemap_latmissing' => 'Chybí hodnota lat (zeměpisná šířka)',
 	'simplemap_lonmissing' => 'Chybí hodnota lon (zeměpisná délka)',
 	'simplemap_zoommissing' => 'Chybí hodnota z (úroveň přiblížení)',
