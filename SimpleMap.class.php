@@ -95,8 +95,6 @@ class SimpleMap {
 			//see if they used 'zoom' rather than 'z' (and allow it)
 			if ( isset( $argv['zoom'] ) ) { 
 				$zoom = $argv['zoom'];
-			} else {
-				$zoom = '';
 			}
 		}
 
