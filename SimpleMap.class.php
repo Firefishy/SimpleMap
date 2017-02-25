@@ -119,43 +119,43 @@ class SimpleMap {
 	
 		if ($error=='') {
 			//Check required parameters values are provided
-			if ( $lat==''  ) $error .= wfMsg( 'simplemap_latmissing' );
-			if ( $lon==''  ) $error .= wfMsg( 'simplemap_lonmissing' );
-			if ( $zoom=='' ) $error .= wfMsg( 'simplemap_zoommissing' );
+			if ( $lat==''  ) $error .= wfMessage( 'simplemap_latmissing' )->text();
+			if ( $lon==''  ) $error .= wfMessage( 'simplemap_lonmissing' )->text();
+			if ( $zoom=='' ) $error .= wfMessage( 'simplemap_zoommissing' )->text();
 			
 			//no errors so far. Now check the values	
 			if (!is_numeric($width)) {
-				$error = wfMsg( 'simplemap_widthnan', $width );
+				$error = wfMessage( 'simplemap_widthnan', $width )->text();
 			} else if (!is_numeric($height)) {
-				$error = wfMsg( 'simplemap_heightnan', $height );
+				$error = wfMessage( 'simplemap_heightnan', $height )->text();
 			} else if (!is_numeric($zoom)) {
-				$error = wfMsg( 'simplemap_zoomnan', $zoom );
+				$error = wfMessage( 'simplemap_zoomnan', $zoom )->text();
 			} else if (!is_numeric($lat)) {
-				$error = wfMsg( 'simplemap_latnan', $lat );
+				$error = wfMessage( 'simplemap_latnan', $lat )->text();
 			} else if (!is_numeric($lon)) {
-				$error = wfMsg( 'simplemap_lonnan', $lon );
+				$error = wfMessage( 'simplemap_lonnan', $lon )->text();
 			} else if ($width>1000) {
-				$error = wfMsg( 'simplemap_widthbig' );
+				$error = wfMessage( 'simplemap_widthbig' )->text();
 			} else if ($width<100) {
-				$error = wfMsg( 'simplemap_widthsmall' );
+				$error = wfMessage( 'simplemap_widthsmall' )->text();
 			} else if ($height>1000) {
-				$error = wfMsg( 'simplemap_heightbig' );
+				$error = wfMessage( 'simplemap_heightbig' )->text();
 			} else if ($height<100) {
-				$error = wfMsg( 'simplemap_heightsmall' );
+				$error = wfMessage( 'simplemap_heightsmall' )->text();
 			} else if ($lat>90) {
-				$error = wfMsg( 'simplemap_latbig' );
+				$error = wfMessage( 'simplemap_latbig' )->text();
 			} else if ($lat<-90) {
-				$error = wfMsg( 'simplemap_latsmall' );
+				$error = wfMessage( 'simplemap_latsmall' )->text();
 			} else if ($lon>180) {
-				$error = wfMsg( 'simplemap_lonbig' );
+				$error = wfMessage( 'simplemap_lonbig' )->text();
 			} else if ($lon<-180) {
-				$error = wfMsg( 'simplemap_lonsmall' );
+				$error = wfMessage( 'simplemap_lonsmall' )->text();
 			} else if ($zoom<0) {
-				$error = wfMsg( 'simplemap_zoomsmall' );
+				$error = wfMessage( 'simplemap_zoomsmall' )->text();
 			} else if ($zoom==18) {
-				$error = wfMsg( 'simplemap_zoom18' );
+				$error = wfMessage( 'simplemap_zoom18' )->text();
 			} else if ($zoom>17) {
-				$error = wfMsg( 'simplemap_zoombig' );
+				$error = wfMessage( 'simplemap_zoombig' )->text();
 			}
 		}
 
@@ -163,7 +163,7 @@ class SimpleMap {
 		if ($error!="") {
 			//Something was wrong. Spew the error message and input text.
 			$output  = '';
-			$output .= "<span class=\"error\">". wfMsg( 'simplemap_maperror' ) . ' ' . $error . "</span><br />";
+			$output .= "<span class=\"error\">". wfMessage( 'simplemap_maperror' )->text() . ' ' . $error . "</span><br />";
 			$output .= htmlspecialchars($input);
 		} else {
 			//HTML for the openstreetmap image and link:
