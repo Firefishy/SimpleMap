@@ -96,7 +96,7 @@ class SimpleMap {
 			if ( isset( $argv['zoom'] ) ) { 
 				$zoom = $argv['zoom'];
 			} else {
-				$zoom = $oldStyleParams['zoom'];
+				$zoom = '';
 			}
 		}
 
