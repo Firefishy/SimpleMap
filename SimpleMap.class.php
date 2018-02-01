@@ -166,7 +166,7 @@ class SimpleMap {
 		} else {
 			//HTML for the openstreetmap image and link:
 			$output  = "";
-			$output .= "<a href=\"http://www.openstreetmap.org/?lat=".$lat."&lon=".$lon."&zoom=".$zoom."\" title=\"See this map on OpenStreetMap.org\">";
+			$output .= "<a href=\"https://www.openstreetmap.org/?lat=".$lat."&lon=".$lon."&zoom=".$zoom."\" title=\"See this map on OpenStreetMap.org\">";
 			$output .= "<img src=\"";
 			//$output .= $wgMapOfServiceUrl . "lat=".$lat."&long=".$lon."&z=".$zoom."&w=".$width."&h=".$height."&format=".$format;
 			

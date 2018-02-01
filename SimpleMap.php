@@ -43,8 +43,8 @@ if( defined( 'MEDIAWIKI' ) ) {
 		'author'         => '[http://harrywood.co.uk Harry Wood], Jens Frank',
 		'svn-date'       => '$LastChangedDate: 2008-07-23 22:20:05 +0100 (Wed, 23 Jul 2008) $',
 		'svn-revision'   => '$LastChangedRevision: 37977 $',
-		'url'            => 'http://wiki.openstreetmap.org/wiki/Simple_image_MediaWiki_Extension',
-		'description'    => 'Allows the use of the <tt><nowiki>&lt;map&gt;</nowiki></tt> tag to display a static map image. Maps are from [http://openstreetmap.org openstreetmap.org]',
+		'url'            => 'https://wiki.openstreetmap.org/wiki/Simple_image_MediaWiki_Extension',
+		'description'    => 'Allows the use of the <tt><nowiki>&lt;map&gt;</nowiki></tt> tag to display a static map image. Maps are from [https://www.openstreetmap.org openstreetmap.org]',
 		'descriptionmsg' => 'simplemap_desc',
 	);
 
