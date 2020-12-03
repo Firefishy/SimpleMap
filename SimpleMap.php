@@ -61,8 +61,8 @@ if( defined( 'MEDIAWIKI' ) ) {
 		$wgParser->setHook( 'map', array( 'SimpleMap', 'parse' ) );
 		
 		//$wgMapOfServiceUrl = "http://osm-tah-cache.firefishy.com/~ojw/MapOf/?";
-		//$wgStaticMapLiteServiceUrl = "http://staticmap.openstreetmap.de/staticmap.php?";
-		$wgKartotherianServiceUrl = "https://maps.wikimedia.org/img/";
+		$wgStaticMapLiteServiceUrl = "http://staticmap.openstreetmap.de/staticmap.php?";
+		//$wgKartotherianServiceUrl = "https://maps.wikimedia.org/img/";
 	}
 
 }
