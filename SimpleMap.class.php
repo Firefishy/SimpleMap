@@ -169,8 +169,8 @@ class SimpleMap {
 			$output .= "<a href=\"https://www.openstreetmap.org/?lat=".$lat."&lon=".$lon."&zoom=".$zoom."\" title=\"See this map on OpenStreetMap.org\">";
 			$output .= "<img src=\"";
 			//$output .= $wgMapOfServiceUrl . "lat=".$lat."&long=".$lon."&z=".$zoom."&w=".$width."&h=".$height."&format=".$format;
-			//$output .= $wgStaticMapLiteServiceUrl . "center=".$lat.",".$lon."&zoom=".$zoom."&size=".$width."x".$height."&maptype=mapnik";
-			$output .= $wgKartotherianServiceUrl . "osm-intl,".$zoom.",".$lat.",".$lon.",".$width."x".$height.".png";
+			$output .= $wgStaticMapLiteServiceUrl . "center=".$lat.",".$lon."&zoom=".$zoom."&size=".$width."x".$height."&maptype=mapnik";
+			//$output .= $wgKartotherianServiceUrl . "osm-intl,".$zoom.",".$lat.",".$lon.",".$width."x".$height.".png";
 
 			$output .= "\" width=\"". $width."\" height=\"".$height."\" border=\"0\">";
 			$output .= "</a>";
